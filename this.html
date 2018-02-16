@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.js"></script>
+</head>
+<body>
+   
+   <script type="text/babel">
+
+//       var person = {
+//
+//           name: "Edwin",
+//           moves: ['running', 'fighting', 'flying'],
+//           displayMoves: function(){
+//
+//               var THIS = this;
+//
+//               this.moves.forEach(function(move){
+//
+//                 var string = THIS.name + " is " + move + " towards the enemy";
+//
+//                 console.log(string);
+//
+//
+//               });
+//
+//
+//           }
+//
+//
+//
+//       };
+//
+//
+//       person.displayMoves();
+
+
+
+
+//
+//var person = {
+//
+//    name: "Edwin",
+//    moves: ['running', 'fighting', 'flying'],
+//    displayMoves: function(){
+//
+//        this.moves.forEach(function(move){
+//
+//            var string = this.name + " is " + move + " towards the enemy";
+//
+//            console.log(string);
+//
+//
+//        }.bind(this));
+//
+//
+//    }
+//
+//
+//
+//};
+//
+//
+//person.displayMoves();
+
+
+
+
+var person = {
+
+    name: "Edwin",
+    moves: ['running', 'fighting', 'flying'],
+    displayMoves(){
+
+        this.moves.forEach(move => {
+
+            var string = this.name + " is " + move + " towards the enemy";
+
+            console.log(string);
+
+
+        });
+
+
+    }
+
+
+
+};
+
+
+person.displayMoves();
+
+
+    </script>
+   
+   
+    
+</body>
+</html>
