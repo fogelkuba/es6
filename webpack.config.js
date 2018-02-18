@@ -2,10 +2,9 @@
  * Created by edwin on 5/15/17.
  */
 module.exports = {
-
   entry: './assets/js/scripts.js',
-  output: {filename: './public/js/bundle.js'
-  },
+  output: {filename: './public/js/bundle.js'},
+  watch: true,
   module:{
       loaders: [
           {
