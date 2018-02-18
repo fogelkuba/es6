@@ -79,14 +79,27 @@ module.exports = __webpack_require__(2);
 
 
 console.log('let & var');
+document.addEventListener('DOMContentLoaded', function () {
 
-var x = 5;
+    var article = document.querySelector('article');
 
-if (x) {
-    var _x = 20;
-}
+    var _loop = function _loop(i) {
+        box = document.createElement('div');
 
-console.log(x);
+        box.addEventListener('click', function () {
+            console.log('hello ' + i);
+        });
+        article.appendChild(box);
+    };
+
+    for (var i = 1; i <= 10; i++) {
+        var box;
+
+        _loop(i);
+    }
+
+    /* end */
+});
 
 /***/ }),
 /* 2 */
