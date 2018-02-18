@@ -68,7 +68,8 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+__webpack_require__(2);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
@@ -78,31 +79,59 @@ module.exports = __webpack_require__(2);
 "use strict";
 
 
-console.log('let & var');
+console.log('const');
+
 document.addEventListener('DOMContentLoaded', function () {
 
-    var article = document.querySelector('article');
+    // const car = 'honda';
+    // car = 'bmw';
 
-    var _loop = function _loop(i) {
-        box = document.createElement('div');
+    // const car = ['honda', 'audi', 'nissan'];
+    // console.log(car);
+    // car.push('bmw');
+    // console.log(car)
 
-        box.addEventListener('click', function () {
-            console.log('hello ' + i);
-        });
-        article.appendChild(box);
+    var car = {
+        brand: 'bmw',
+        model: 'm3',
+        doors: 2,
+        engine: '3.0l'
     };
-
-    for (var i = 1; i <= 10; i++) {
-        var box;
-
-        _loop(i);
-    }
+    console.log(car);
+    car.brand = 'audi';
+    car.model = 'a4';
+    car.doors = 4;
+    car.engine = '4,2l';
+    console.log(car);
 
     /* end */
 });
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('let & var');
+document.addEventListener('DOMContentLoaded', function () {
+
+    // const article = document.querySelector('article');
+    //
+    // for (let i = 1; i <= 10; i++) {
+    //     var box = document.createElement('div');
+    //     box.addEventListener('click', function(){
+    //         console.log(`hello ${i}`)
+    //     })
+    //     article.appendChild(box);
+    // }
+
+
+    /* end */});
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
