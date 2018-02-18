@@ -71,11 +71,26 @@ __webpack_require__(1);
 __webpack_require__(2);
 __webpack_require__(3);
 __webpack_require__(4);
-module.exports = __webpack_require__(5);
+__webpack_require__(5);
+__webpack_require__(6);
+module.exports = __webpack_require__(7);
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('arrow functions');
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* end */});
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,7 +124,27 @@ document.addEventListener('DOMContentLoaded', function () {
     /* end */});
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('default paramater');
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // function cars(car1='BMW', car2="Audi"){
+    //     console.log(car1, car2)
+    // }
+    // console.log('Car list:')
+    // cars();
+    // cars('Rover');
+
+    /* end */});
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -132,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /* end */});
 
 /***/ }),
-/* 3 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -141,43 +176,43 @@ document.addEventListener('DOMContentLoaded', function () {
 console.log('scripts');
 
 /***/ }),
-/* 4 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
 console.log('spread operator');
 
 document.addEventListener('DOMContentLoaded', function () {
-    var _console, _console2;
+  // 
+  // var adults = ['John', 'Peter', 'Maria'];
+  // var kids = ['Johnnie', 'Pablito', 'Mary'];
+  // console.log(kids);
+  // console.log(...kids);
+  // var people = ['Juan', 'Williams', ...kids, ...adults];
+  // console.log(people);
+  // console.log(...people);
+  //
+  // var send = function(username, email, pass){ console.log("DATA SENT", username, email, pass) };
+  // let fromBackend = ['Rico', 'rico@rico.com', 12456];
+  // send(...fromBackend)
+  //
+  // var cars = [
+  //     {brand: 'honda', doors: 4},
+  //     {brand: 'bmw', doors: 2},
+  // ];
+  // var newCars = [
+  //     {brand: 'audi', doors: 3},
+  //     {brand: 'mercedes', doors: 4},
+  // ];
+  // cars.push(...newCars);
+  // console.log(cars)
 
-    var adults = ['John', 'Peter', 'Maria'];
-    var kids = ['Johnnie', 'Pablito', 'Mary'];
-    console.log(kids);
-    (_console = console).log.apply(_console, kids);
-    var people = ['Juan', 'Williams'].concat(kids, adults);
-    console.log(people);
-    (_console2 = console).log.apply(_console2, _toConsumableArray(people));
-
-    var send = function send(username, email, pass) {
-        console.log("DATA SENT", username, email, pass);
-    };
-    var fromBackend = ['Rico', 'rico@rico.com', 12456];
-    send.apply(undefined, fromBackend);
-
-    var cars = [{ brand: 'honda', doors: 4 }, { brand: 'bmw', doors: 2 }];
-    var newCars = [{ brand: 'audi', doors: 3 }, { brand: 'mercedes', doors: 4 }];
-    cars.push.apply(cars, newCars);
-    console.log(cars);
-
-    /* end */
-});
+  /* end */});
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
