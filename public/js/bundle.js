@@ -67,11 +67,35 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(1);
+module.exports = __webpack_require__(2);
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
-var name = "I am the one who knocks";
-console.log(name);
+console.log('let & var');
+
+var x = 5;
+
+if (x) {
+    var _x = 20;
+}
+
+console.log(x);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('scripts');
 
 /***/ })
 /******/ ]);

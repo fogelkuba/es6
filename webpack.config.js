@@ -1,15 +1,20 @@
 /**
  * Created by edwin on 5/15/17.
  */
-module.exports = {
-  entry: './assets/js/scripts.js',
-  output: {filename: './public/js/bundle.js'},
+const webpack = require('webpack'),
+    glob = require('glob');
+
+let config = {
+  entry: {
+      'bundle': glob.sync('./assets/js/*.js')
+  },
+  output: {filename: './public/js/[name].js'},
   watch: true,
   module:{
       loaders: [
           {
               test: /\.js$/,
-              exclude: /node_modules/,
+               exclude: /node_modules/,
               loader: 'babel-loader',
               query: {
                   presets:['es2015']
@@ -18,3 +23,5 @@ module.exports = {
       ]
   }
 };
+
+module.exports = config;
