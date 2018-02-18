@@ -69,7 +69,9 @@
 
 __webpack_require__(1);
 __webpack_require__(2);
-module.exports = __webpack_require__(3);
+__webpack_require__(3);
+__webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
@@ -91,21 +93,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // car.push('bmw');
     // console.log(car)
 
-    var car = {
-        brand: 'bmw',
-        model: 'm3',
-        doors: 2,
-        engine: '3.0l'
-    };
-    console.log(car);
-    car.brand = 'audi';
-    car.model = 'a4';
-    car.doors = 4;
-    car.engine = '4,2l';
-    console.log(car);
+    // const car = {
+    //     brand: 'bmw',
+    //     model: 'm3',
+    //     doors: 2,
+    //     engine: '3.0l'
+    // };
+    // console.log(car);
+    // car.brand = 'audi';
+    // car.model = 'a4';
+    // car.doors = 4;
+    // car.engine = '4,2l'
+    // console.log(car)
 
-    /* end */
-});
+    /* end */});
 
 /***/ }),
 /* 2 */
@@ -138,6 +139,68 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 console.log('scripts');
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+console.log('spread operator');
+
+document.addEventListener('DOMContentLoaded', function () {
+    var _console, _console2;
+
+    var adults = ['John', 'Peter', 'Maria'];
+    var kids = ['Johnnie', 'Pablito', 'Mary'];
+    console.log(kids);
+    (_console = console).log.apply(_console, kids);
+    var people = ['Juan', 'Williams'].concat(kids, adults);
+    console.log(people);
+    (_console2 = console).log.apply(_console2, _toConsumableArray(people));
+
+    var send = function send(username, email, pass) {
+        console.log("DATA SENT", username, email, pass);
+    };
+    var fromBackend = ['Rico', 'rico@rico.com', 12456];
+    send.apply(undefined, fromBackend);
+
+    var cars = [{ brand: 'honda', doors: 4 }, { brand: 'bmw', doors: 2 }];
+    var newCars = [{ brand: 'audi', doors: 3 }, { brand: 'mercedes', doors: 4 }];
+    cars.push.apply(cars, newCars);
+    console.log(cars);
+
+    /* end */
+});
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('template literals');
+
+document.addEventListener('DOMContentLoaded', function () {
+    // let name = 'Jay';
+    // let msg = `My name is ${name}`;
+    // console.log(msg)
+    //
+    // let name2 = 'Jay';
+    // let msg2  = `?      . . . . . . .     My name is ${name}            ?`;
+    // console.log(msg2)
+
+    // let name3 = function(){
+    //     return 'Jay 3'
+    // };
+    // let msg2 = `who is the best? ${name3()} is!!1`;
+    // console.log(msg2)
+
+    /* end */});
 
 /***/ })
 /******/ ]);
