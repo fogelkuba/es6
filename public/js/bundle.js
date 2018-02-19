@@ -73,7 +73,8 @@ __webpack_require__(3);
 __webpack_require__(4);
 __webpack_require__(5);
 __webpack_require__(6);
-module.exports = __webpack_require__(7);
+__webpack_require__(7);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
@@ -87,16 +88,12 @@ console.log('arrow functions');
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    var calc = function calc() {
-        var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
-        var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
-
-        return a + b;
-    };
-
-    console.log(calc());
-    /* end */
-});
+  // const calc = (a = 2, b = 3) => {
+  //     return a + b;
+  // }
+  //
+  // console.log(calc());
+  /* end */});
 
 /***/ }),
 /* 2 */
@@ -191,6 +188,19 @@ console.log('scripts');
 "use strict";
 
 
+console.log('shorthand');
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* end */});
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 console.log('spread operator');
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -221,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* end */});
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
