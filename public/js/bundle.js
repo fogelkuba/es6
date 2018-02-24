@@ -74,7 +74,8 @@ __webpack_require__(4);
 __webpack_require__(5);
 __webpack_require__(6);
 __webpack_require__(7);
-module.exports = __webpack_require__(8);
+__webpack_require__(8);
+module.exports = __webpack_require__(9);
 
 
 /***/ }),
@@ -97,6 +98,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('class');
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* end */});
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -130,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /* end */});
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -150,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /* end */});
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /* end */});
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -182,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
 console.log('scripts');
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -192,10 +206,17 @@ console.log('shorthand');
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* end */});
+    var person = {};
+    person.name = 'john';
+    person.log = function () {
+        console.log(undefined.name);
+    };
+
+    /* end */
+});
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -231,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* end */});
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
