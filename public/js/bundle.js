@@ -75,7 +75,8 @@ __webpack_require__(5);
 __webpack_require__(6);
 __webpack_require__(7);
 __webpack_require__(8);
-module.exports = __webpack_require__(9);
+__webpack_require__(9);
+module.exports = __webpack_require__(10);
 
 
 /***/ }),
@@ -238,10 +239,23 @@ document.addEventListener('DOMContentLoaded', function () {
 "use strict";
 
 
-console.log('scripts');
+console.log('promises');
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* end */});
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('scripts');
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -261,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -297,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* end */});
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
