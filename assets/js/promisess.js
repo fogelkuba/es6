@@ -1,7 +1,21 @@
 console.log('promises');
 
-document.addEventListener('DOMContentLoaded', ()=> {
+// document.addEventListener('DOMContentLoaded', ()=> {
+//
+//
+//
+// /* end */ })
 
 
+// sync
 
-/* end */ })
+fetch("http://google.com").catch( (err)=> {
+    console.log(err)
+})
+
+// hello("hello");
+
+console.log("hey there");
+
+
+// async

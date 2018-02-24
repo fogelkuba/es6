@@ -241,9 +241,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 console.log('promises');
 
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', ()=> {
+//
+//
+//
+// /* end */ })
 
-  /* end */});
+
+// sync
+
+fetch("http://google.com").catch(function (err) {
+    console.log(err);
+});
+
+// hello("hello");
+
+console.log("hey there");
+
+// async
 
 /***/ }),
 /* 7 */
