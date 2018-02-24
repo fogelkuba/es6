@@ -17,4 +17,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
     let john = new Person('John', 'Dentist');
     john.displayData();
 
+
+    class Alien extends Person {
+
+        constructor(){
+
+            super("Mary", "Artist");
+
+        }
+    }
+    let alien = new Alien();
+
+    alien.displayData(); 
+
 /* end */ })
