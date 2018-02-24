@@ -101,27 +101,38 @@ document.addEventListener('DOMContentLoaded', function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-// console.log('class');
-//
-// document.addEventListener('DOMContentLoaded', ()=> {
-//
-//     class Person {
-//         constructor(name, title){
-//             this.name = name;
-//             this.title = title;
-//         }
-//
-//         displayData(){
-//             console.log(`${this.name} is a great ${this.title}`)
-//         }
-//
-//     }
-//
-//     let john = new Person('John', 'Dentist');
-//     john.displayData();
-//
-// /* end */ })
 
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+console.log('class');
+
+document.addEventListener('DOMContentLoaded', function () {
+    var Person = function () {
+        function Person(name, title) {
+            _classCallCheck(this, Person);
+
+            this.name = name;
+            this.title = title;
+        }
+
+        _createClass(Person, [{
+            key: 'displayData',
+            value: function displayData() {
+                console.log(this.name + ' is a great ' + this.title);
+            }
+        }]);
+
+        return Person;
+    }();
+
+    var john = new Person('John', 'Dentist');
+    john.displayData();
+
+    /* end */
+});
 
 /***/ }),
 /* 3 */
