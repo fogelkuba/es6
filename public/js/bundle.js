@@ -248,17 +248,29 @@ console.log('promises');
 // /* end */ })
 
 
-// sync
+// // sync
+//
+// fetch("http://google.com").catch( (err)=> {
+//     console.log(err)
+// })
+//
+// // hello("hello");
+//
+// console.log("hey there");
+//
+//
+// // async
 
-fetch("http://google.com").catch(function (err) {
-    console.log(err);
+
+var myPromise = new Promise(function (resolve, reject) {
+    var isComplete = false;
+
+    if (isComplete) {
+        resolve("This is complete");
+    } else {
+        reject("Not completed");
+    }
 });
-
-// hello("hello");
-
-console.log("hey there");
-
-// async
 
 /***/ }),
 /* 7 */

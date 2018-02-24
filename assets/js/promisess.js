@@ -7,15 +7,26 @@ console.log('promises');
 // /* end */ })
 
 
-// sync
+// // sync
+//
+// fetch("http://google.com").catch( (err)=> {
+//     console.log(err)
+// })
+//
+// // hello("hello");
+//
+// console.log("hey there");
+//
+//
+// // async
 
-fetch("http://google.com").catch( (err)=> {
-    console.log(err)
-})
 
-// hello("hello");
+let myPromise = new Promise(function(resolve, reject){
+    let isComplete = false;
 
-console.log("hey there");
-
-
-// async
+    if (isComplete) {
+        resolve("This is complete");
+    }else{
+        reject("Not completed")
+    }
+});
