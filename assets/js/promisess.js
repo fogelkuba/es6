@@ -30,3 +30,10 @@ let myPromise = new Promise(function(resolve, reject){
         reject("Not completed")
     }
 });
+
+myPromise.then((result)=> {
+    console.log(result)
+})
+.catch((err)=>{
+    console.log(err)
+})

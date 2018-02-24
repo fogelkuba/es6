@@ -272,6 +272,12 @@ var myPromise = new Promise(function (resolve, reject) {
     }
 });
 
+myPromise.then(function (result) {
+    console.log(result);
+}).catch(function (err) {
+    console.log(err);
+});
+
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
